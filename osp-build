@@ -1,0 +1,55 @@
+#!/bin/bash
+
+# This script creates OSP from Dokuwiki and the
+# OSP src-repository
+
+BUILDDIR="./portfolio"
+TARGETZIP="openschulportfolio.zip"
+DWUPSTREAM="dokuwiki-upstream.tgz"
+
+if [ ! - f $DWUPSTREAM ]; then
+    echo "Dokuwiki install tgz has to be present as $DWUPSTREAM."
+    exit 1
+fi
+
+
+rm -rf $BUILDDIR
+
+# First Argument has to be the original dokuwiki distribution
+# Download without changes, stable no plugins
+DWUPSTREAM=$1
+
+tar -xzf $DWUPSTREAM
+mv dokuwiki $BUILDDIR
+
+echo -n "Copying OSP specific files to builddir..."
+cp -ar ./osp/copy/* $BUILDDIR
+echo " done."
+
+# Plugins
+echo "Copying plugins to builddir..."
+for plugin in $(find ./plugins/ -name plugin.info.txt); do
+	plugdir=$(echo $plugin | awk -F/ '{print $3}')
+	plugbase=$(grep base $plugin | awk '{print $2}')
+	echo -n "  Copying plugin from $plugdir to $plugbase..."
+	cp -ar ./plugins/$plugdir  $BUILDDIR/lib/plugins/$plugbase
+	rm -rf $BUILDDIR/lib/plugins/${plugbase}/.git
+	echo " done."
+done
+echo " done."
+
+# Build zip
+rm -f $TARGETZIP
+sleep 1
+zip -r $TARGETZIP $BUILDDIR
+rm -rf $BUILDDIR
+
+# Testing
+unzip $TARGETZIP -d /var/www
+chown -R www-data: /var/www/*
+
+
+
+
+
+ 
