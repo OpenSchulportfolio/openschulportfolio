@@ -7,17 +7,13 @@ BUILDDIR="./portfolio"
 TARGETZIP="openschulportfolio.zip"
 DWUPSTREAM="dokuwiki-upstream.tgz"
 
-if [ ! - f $DWUPSTREAM ]; then
+if [ ! -f $DWUPSTREAM ]; then
     echo "Dokuwiki install tgz has to be present as $DWUPSTREAM."
     exit 1
 fi
 
 
 rm -rf $BUILDDIR
-
-# First Argument has to be the original dokuwiki distribution
-# Download without changes, stable no plugins
-DWUPSTREAM=$1
 
 tar -xzf $DWUPSTREAM
 mv dokuwiki $BUILDDIR
