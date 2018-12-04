@@ -1,0 +1,14 @@
+~~NOCACHE~~
+
+====== Hauptmenü ======
+
+  * [[..start|Start]]
+
+----
+**Hilfe**
+
+  * [[hilfe:start|Hilfe für Benutzer]]
+  * [[hilfe:redaktion:start|Hilfe für Redakteure]]
+
+----
+  * [[wiki:credits|Über OSP]]

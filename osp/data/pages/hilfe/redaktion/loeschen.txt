@@ -1,0 +1,16 @@
+====== Wie löscht man eine Seite? ======
+
+Eine Seite gilt als gelöscht wenn durch "Bearbeiten" der gesamte Inhalt (auch jegliche Leerzeichen) entfernt werden und die Seite dann gespeichert wird.
+
+<note tip>Eine Seite wird trotz Löschens meist in der Historie des Wikis gespeichert. Wenn man zu einem späteren Zeitpunkt eine Seite mit demselben Nanem anlegt, erhält man die gesamte Historie wieder angezeigt, auch die Versionen vor dem Löschen der Seite.</note>
+
+====== Wie verschiebt man eine Seite? ======
+
+Zunächst die zu verschiebene Seite anschauen, dann in der Werkzeugleiste am linken Menürand den Link "Seite verschieben" anklicken.
+Die dortigen Anweisungen schildern, warum nicht alle Seiten beliebig verschoben/umbenannt werden können.
+
+Das Umbenennen einer Seite entspricht dem Verschieben zu einem neuen Namen im selben Namensraum.
+
+Da beim Verschieben einer Seite viele Berechtigungen nötig sind, können das **nur Administratoren**.
+
+Seiten sollten sehr zurückhaltend verschoben werden, da die zu einer Seite gehörenden Dateien nicht mit verschoben werden und eventuell vorhandene zusätzliche Seiteninformationen ("Metadaten") ebenfalls verloren gehen können.

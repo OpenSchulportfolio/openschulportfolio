@@ -1,0 +1,7 @@
+====== Hilfe zur Buchfunktion ======
+
+  * Um ein Buch anzulegen, genügt es, wenn man eine Seite ansieht in der Exportbox dem Link ''Buchauswahl''  zu folgen.
+  * Sobald das Buch mindestens eine Seite enthält, erscheint auf allen Wikiseiten unterhalb des Seitenpfads die Buchmenübox, die es ermöglicht, weitere Seiten zur Auswahl hinzuzufügen sowie das Buch anzusehen.
+  * Das aktuelle Buch sowie alle gespeicherten Auswahlen kann man auf der Seite [[bookcreator:start]] einsehen.
+  * Dort kann man auch nachträglich durch Drag'n'Drop die Reihenfolge des Wikiseiten im Buch verändern.
+  * Wenn man mit Auswahl und Reihenfolge zufrieden ist, kann man das Buck entweder als Druckversion oder als PDF - mit den dort bekannten Einschränkungen - exportieren.

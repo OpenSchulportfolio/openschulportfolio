@@ -1,0 +1,58 @@
+{{tag> redaktion hilfe}}
+====== Links: Verweise auf andere Stellen/Seiten ======
+
+Mit DokuWiki können unterschiedliche Arten von Links benutzt werden.
+
+Am einfachsten erzeugt man Links auf andere Wiki-Seiten oder Seiten im Internet mit den Link Assistenten:
+
+{{:hilfe:linkassistent.png?200  |}}
+
+Einfach das Icon anklicken, sich zum Linkziel klicken und die Seite, auf die verlinkt werden soll anklicken, dann wird der passende Code im Editor eingefügt.
+===== Verweise auf andere Seiten des Wikis =====
+
+Interne Links, also Verweise auf Seiten innerhalb von DokuWiki, werden in doppelten eckigen Klammern gesetzt:\\
+[[doku>wiki:pagename]]\\
+
+Ein Link kann auch hinter einem Begriff oder einer Beschreibung versteckt werden:\\
+[[doku>wiki:pagename|Beschreibung für einen Link]].
+
+  Interne Links werden in doppelten eckigen Klammern gesetzt:
+  [[doku>wiki:pagename]] 
+  
+  Ein Link kann auch hinter einem Begriff oder einer Beschreibung versteckt werden:
+  [[doku>wiki:pagename|Beschreibung für einen Link]].
+
+Dateinamen für neue Seiten im Wiki werden automatisch in Kleinbuchstaben umgewandelt!\\
+Umlaute sind genauso wie Sonderzeichen nicht erlaubt! ([[doku>wiki:namensbereiche|Verweis auf erlaubte Zeichen in Dateinamen - englisch]])
+
+Durch einen Doppelpunkt werden Namensbereiche im Wiki aufgelöst:
+
+  Durch einen Doppelpunkt werden Namensbereiche im Wiki aufgelöst:[[wiki:namensbereiche]] 
+
+Weitere Informationen zu Namensbereichen: [[doku>wiki:namensbereiche]].
+
+Anmerkungen:
+
+  * Links zu [[wiki:syntax|existierenden Seiten]] werden anders angezeigt als Links zu [[wiki:nicht-existierenden]] Seiten.
+
+
+===== Verweise auf "externe" Seiten im Internet =====
+
+Externe Links (Verweise auf andere Webseiten oder Dateien) werden automatisch erkannt: http://www.google.com oder einfach www.google.com\\
+Verweise können auch hinter eigenen Begriffen versteckt werden: [[http://www.google.com|hier ist google]] \\
+E-mail Adressen werden in spitze Klammern gesetzt: <andi@splitbrain.org>
+
+  Externe Links werden automatisch erkannt: http://www.google.com oder einfach  www.google.com\\
+  Verweise können auch hinter eigenen Begriffen versteckt werden: [[http://www.google.com|hier ist google]] \\
+  E-mail Adressen werden in spitze Klammern gesetzt: <andi@splitbrain.org>
+
+
+
+===== Interwiki-Links =====
+
+DokuWiki unterstützt auch Links in andere Wikis, sogenannte [[doku>wiki:interwiki]] Links. \\
+Ein Link zur Wikipedia Seite über Wikis:[[wp>Wiki]]
+
+  DokuWiki unterstützt auch Links in andere Wikis, sogenannte [[doku>wiki:interwiki]] Links. \\
+  Ein Link zur Wikipedia Seite über Wikis:[[wp>Wiki]]
+

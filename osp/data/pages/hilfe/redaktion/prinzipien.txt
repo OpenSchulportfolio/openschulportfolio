@@ -1,0 +1,22 @@
+{{tag> redaktion hilfe}}
+
+====== Leitlinien für Redakteure ======
+
+===== Die goldene Regel =====
+
+<note tip>**Es sollten möglichst viele Inhalte und Informationen  als DokuWiki Text eingefügt werden** und möglichst wenige Dateien in das Wiki hochgeladen werden.</note>
+
+  * Nur Informationen in DokuWiki Texten werden von der Suche und der Verschlagwortung erfasst
+  * Nur Änderungen an DokuWiki Texten werden in der Änderungsgeschichte angezeigt.
+  * Nur für DokuWiki Texte greift die Versionskontrolle. Dateien müssen bei jeder Aktualisierung heruntergeladen, dann verändert und anschließend wieder hochgeladen werden. Die Änderungen sind nicht nachvollziehbar.
+  * Nur DokuWiki Texte können mit geringem Aufwand aktuell gehalten werden.
+
+Will man Informationen - beispielsweise zum ausdrucken - anders formatieren, kann man die Texte jederzeit als Openoffice Dokument herunterladen, wie gewünscht formatieren und anschließend ausdrucken.
+
+====== Struktur statt Format ======
+
+Man sollte Texte strukturieren, nicht formatieren. Eine Einteilung der Informationen durch Überschriften und Unterüberschriften erleichtert die Übersicht ebenso wie die Verwendung von Aufzählungen und Nummerierungen.
+
+Wichtige Abschnitte können durch vier verschiedene Infoboxen kenntlich gemacht werden, erreichbar in der Menüleiste des Editors.
+
+Ungeeigtet zur Strukturierung von Informationen sind meist Tabellen - sie eignen sich nur zur Darstellung tabellarischer Daten.

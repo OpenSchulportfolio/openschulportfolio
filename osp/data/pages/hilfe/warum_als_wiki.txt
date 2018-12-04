@@ -1,0 +1,44 @@
+====== Schulportfolio - warum als Wiki? ======
+
+
+Grundlage aller Überlegungen ist die {{:portfolio:qe6_schulportfolio.pdf|Handreichung des LS zum Schulportfolio}}. 
+
+===== Zielüberlegung =====
+
+
+<note tip>Das Schulportfolio...
+  * dient der Transparenz innerhalb der Schule 
+  * ist Ausgangspunkt für eine systematische und alle Beteiligten einschließende Weiterentwicklung von Schule und Unterricht
+  * erleichtert die Orientierung an der Schule und vermittelt den Beteiligten so Klarheit und Sicherheit
+  * ist für alle Kolleginnen und Kollegen, insbesondere für neue, ein Nachschlagewerk zur Information über die Schule und wiederkehrende Abläufe
+  * sichert das Wissen der "Expertinnen und Experten" für bestimmte Aufgaben, wie beispielsweise der Organisation von Projekten
+  * dient als Verbindungsglied zur Fremdevaluation((Seite 5, "Zweck, Funktion und Nutzen eines Schulportfolios"))
+</note>
+
+Daraus lässt sich ableiten, dass als Haupadressaten des Portfolios die Mitglieder der Schulgemeinde zu berücksichtigen sind - die Erstellung "für die Fremdevaluation" darf im etwas im Hintergrund stehen. 
+
+===== Muss es nicht einen Ordner/eine Papierversion geben? =====
+
+<note tip>Das Fremdevaluationsteam erhält daher im Vorfeld ihrer Schulbesuche einen Auszug des
+Schulportfolios in Papierform, um diese ersten Eindrücke in die konkrete Planung der Evaluation einzubeziehen.
+Zentrale Dokumente, die die Fremdevaluation anonymisiert benötigt, sind beispielsweise
+die pädagogischen Grundsätze der Schule, die Ergebnisse und Schlussfolgerungen aus den durchgeführten
+Selbstevaluationen oder grundlegende statistische Angaben über die Schule.((Seite 3, "Vorbemerkungen"))
+</note>
+
+<note tip>
+**Welche Form soll das Schulportfolio haben?**
+
+Die Form des Schulportfolios bleibt der Schule überlassen. Bei der Wahl der Form sollte in Betracht
+gezogen werden, dass eine fortlaufende Bearbeitung und Aktualisierung stattfindet. Alle
+Darstellungsformen, gleich ob in Papierform, digital im Intranet oder auf der Homepage im Internet,
+besitzen Vor- und Nachteile (siehe ‚IV Form und Zugriffsmöglichkeiten’). Die Schule wägt diese
+gegeneinander ab und wählt die Form aus, die am zweckmäßigsten ist.((Seite 13, "Überlegungen zur Erstellung des Schulportfolios"))
+
+Weitergehend: {{:hilfe:qe6_schulportfolio_matrix.pdf|Enscheidungsmatrix aus der Handreichung}} </note>
+
+Daraus lässt sich ableiten, dass es nicht möglich sein muss, "auf Knopfdruck" eine Papierversion zu erstellen, es reicht, wenn bestimmte Teile des Portfolios dem Fremdevaluationsteam als Papierversion zur Verfügung gestellt werden können.
+
+Durch den möglichen Zugriff aus dem Internet ist möglicherweise sogar dies nicht notwendig, da das Fremdevaluationsteam das Portfolio direkt anschauen kann.
+
+Die deutlich vereinfachte Nutzbarkeit und vor allem die dezentrale Aktualisierung wiegen mögliche Bedenken auf.

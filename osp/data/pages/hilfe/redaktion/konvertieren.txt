@@ -1,0 +1,49 @@
+
+{{tag> redaktion hilfe}}
+====== Wie überführt man ein vorhandenes Office Dokument ist Wiki-Format? ======
+
+
+===== Möglichkeit A - Cut'n'Paste =====
+
+Man öffne das Word/Openoffice Dokument, markiere den Text, Kopiere ihn mit ''Strg-C'' in die Zwischenablage. Dann editiert man die Wiki-Seite, so dass sich das Eingabefeld des Editors öffnet und fügt die Inhalte mit ''Strg-V'' dort ein.
+
+Nun muss man den unformatiert vorliegenden Text mit dem Wiki Editor strukturieren und formatieren, was teilweise mühsam sein kann. Oft muss man auch von der vorhandenen Struktur abrücken, um die Informationen im Wiki lesbar zu machen.
+
+===== Möglichkeit B - Verwendung der Openoffice/Libre-Office Erweiterungen =====
+
+Für [[http://de.openoffice.org/|Openoffice]] und [[http://de.libreoffice.org/|Libre Office]] gibt Erweiterungen, mit dem vorhandene Dokumente (Text/Tabellen) in die DoluWiki Syntax umgewandelt werden können. Damit kann man einen großen Teil der Formatierungsarbeit automatisieren.
+
+Da Openoffice auch Word-Dokumente öffnen kann, kann man auf diese Weise auch Word Dokumente vergleichsweise einfach ins Wiki-Format umwandeln:
+
+
+  * Datei mit Openoffice öffnen
+  * Makro ausführen. Der konvertierte Text landet automatisch in der Zwischenablage
+  * Zwischenablage in den Wiki-Editor einfügen
+
+==== Installation der Erweiterungen ====
+
+
+Speichern Sie die folgenden beiden Erweiterungsdateien auf Ihrer Festplatte. Klicken Sie den Link mit der rechten Maustaste an und wählen Sie die Option "Ziel speichern unter" ((oder entsprechendes, hängt vom verwendeten Browser ab)), sicher Sie die oxt-Datei auf Ihrer Festplatte.
+
+  * {{:hilfe:redaktion:calc2dokuwiki.oxt}}: writer2dokuwiki.oxt
+  * {{:hilfe:redaktion:writer2dokuwiki.oxt|}}: calc2dokuwiki.oxt 
+
+Starten Sie anschließend OpenOffice, öffnen Sie den Menüpunkt "Extras->Extension Manager", wählen Sie dort die Datei ''writer2dokuwiki.oxt'' aus, wiederholen Sie die Dateiauswahl mit der Datei ''calc2dokuwiki.oxt''. 
+
+Wenn Sie gefragt werden, ob Sie die Erweiterung nur für sich oder für alle Benutzer installieren wollen, sind sie mit der Antwort "nur für mich" auf der sicheren Seite.
+
+Starten Sie OpenOffice anschließend neu.
+
+==== Anwenden der Plugins ====
+
+{{  :hilfe:arbeitsflaeche_1_013.png?400|}}
+Nachdem Sie OpenOffice neu gestartet haben, sehen Sie bei Textdokumenten den neuen Menüeintrag ''writer2dokuwiki'', bei Tabellendokumenten den Menüeintrag ''calc2dokuwiki''. Die beiden Menüs haben jeweils nur einen Menüpunkt, der die Konvertierung des geladenen Dokuments auslöst.
+
+**Gehen Sie wie folgt vor:**
+
+  - Öffnen Sie Ihr Office Dokument mit OpenOffice
+  - Beim Calc Makro muss man zuerst den Bereich der Tabelle markieren und dann das Makro ausführen
+  - Führen Sie das Makro aus: Es wird ein neues Office-Textdokument erzeugt, welches den Text im Wikiformat enthält. 
+  - Kopieren Sie den konvertierten Text in die gewünschte Wikiseite
+
+Auch bei Verwendung der Makros werden Sie in den meisten Fällen von Hand nacharbeiten müssen, da jedoch meist bereits Überschriften vorhanden sind, kann man die Seite Abschnittsweise bis zum gewünschten Zustand bearbeiten.

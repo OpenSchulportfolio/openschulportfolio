@@ -1,0 +1,43 @@
+====== Über open|Schulportfolio ======
+
+Das vorliegende Programmpaket //openSchulportfolio// ist eine technische
+Umsetzung zur wikibasierten Erstellung und Pflege des **Schulportfolios**. 
+Weitere Informationen zum Schulportfolio in Baden-Württemberg erhalten Sie auf
+[[http://www.schule-bw.de/entwicklung/qualieval/qualiabs/einstqe/|den Seiten
+des Landesinstituts für Schulentwicklung.]]
+
+Informationen zum Paket selbst finden Sie auf der Seite
+[[http://www.openschulportfolio.de|www.openschulportfolio.de]]. 
+
+//openSchulportfolio// ist vollständig mit **quelloffener
+Software** umgesetzt. Basis des Systems ist die Wiki-Software
+[[http://www.dokuwiki.org| DokuWiki]]. DokuWiki und alle verwendeten
+Erweiterungen stehen unter der GNU-Public-License.  
+
+<note tip>
+//openSchulportfolio// ist kostenlos  -- es war jedoch
+einige Zeit nötig, um aus der speziellen Lösung für die Schule, 
+an der ich tätig bin, ein einfach zu installierendes und zu 
+verwaltendes System zu bauen.
+
+  * Ich freue mich sehr über **Rückmeldungen aller Art** -- wenn Sie das Portfolio benutzen, schreiben Sie mir eine kurze [[mailto:frank@linuxmuster.net|Mail]].
+  * Wenn ich keine Portfolio-Pakete schnüre, lese ich sehr gerne -- wenn Sie möchten, können Sie also auch gerne mal auf meiner [[http://www.ua25.de/wunschliste.html|Amazon Wunschliste]] vorbeischauen...
+ --- //[[mailto:frank@linuxmuster.net|Frank Schiebel]] // 
+</note>
+
+===== Dank... =====
+
+Um dieses Portfoliosystem zu erstellen, habe ich die Arbeit vieler Personen genutzt, zusammengeführt, angepasst und/oder modifiziert. Dies war nur deshalb möglich, weil die Autoren ihre Software unter freien Lizenzen entwickeln und veröffentlichen. Viele der verwendeten Komponenten basieren wiederum auf freier, quelloffener Software - die folgende Auflistung muss also unvollständig bleiben, besonderer Dank gilt jedoch:
+
+  * //Andreas Gohr//, der [[http://www.splitbrain.org/projects/dokuwiki|Autor der Software DokuWiki]], die als Basis dieses Systems dient.
+  * //Andreas Härter//, auf dessen [[http://andreas-haerter.com/projects/dokuwiki-template-vector|Vorlage vector]] das Design des Portfolios beruht. 
+  * //Gina Häußge//, welche die Plugins ''filelist'' und ''blockquote''  programmiert hat - bei denen ich sehr viel für eigene Erweiterungen abschauen konnte.
+  * //Jörg Richter// und //Jesko Anschütz//, die die passende LDAP Konfiguration für die Linux-Musterlösung ausgetüftelt haben. 
+  * //Tamer Berber//, der wichtige [[http://www.realschule-ehingen.de/index.php?menuid=77&reporeid=628|Hinweise und Anleitungen]] zum Betrieb von open|Schulportfolio in der Windows Musterlösung bereitstellt.
+  * Alle anderen Autoren der zahlreichen Dokuwiki-Plugins, die bei diesem Paket zum Einsatz kommen: //Michael Klier, Esther Brunner, Mykola Ostrovskyy, Christopher Smith, Terence J. Grant, Luigi Micco, Robert Rackl, Samuele Tognini, Olivier Cortès , Eric Hameleers, Aurélien Bompard,  Gary Owen, Klaus Vormweg//, //Matthias Grimm// und //Ikuo Obataya//.
+
+Vom [[http://tango.freedesktop.org/Tango_Desktop_Project|Tango Desktop Icon Project]] habe ich die im Paket mitgelieferten Icons abgestaubt, das Beamer-Icon kommt von der Seite der [[http://www.netsys-it.de/content/view/196/75/|Firma Net-sys.it]]
+
+Ich hoffe, die Software erleichtert Ihnen Ihre tägliche Arbeit.
+
+ --- //[[mailto:frank@linuxmuster.net|Frank Schiebel]] 13.11.2010//

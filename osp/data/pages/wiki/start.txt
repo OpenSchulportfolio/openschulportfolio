@@ -1,0 +1,3 @@
+== Info ==
+
+Das Verzeichnis (der Namensraum) "wiki" enthält Seiten, die für die Funktionalität des Portfolios wichtig sind. Löschen Sie keine Seiten oder Namensräume.

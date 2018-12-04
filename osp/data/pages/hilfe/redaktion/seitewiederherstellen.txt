@@ -1,0 +1,10 @@
+{{tag> redaktion hilfe}}
+
+====== Wie stellt man eine ältere Seitenversion wieder her? ======
+
+  * Zunächst öffnet man die gewünschte Seitenversion, indem man den Knopf ''Ältere Versionen'' anklickt
+  * Dann sieht man die Liste der vorhandenen Seitenversionen, die gewünschte wird durch Klick geöffnet.
+
+{{:hilfe:widerherst.png?600|}}
+
+  * Dann wird die alte Seitenversion angezeigt, diese bearbeitet man dann und speichert sie erneut ab. Dabei muss man bestätigen, dass man zur Kenntnis nimmt, dass es eine neuere Seitenversion gibt und man diese überschreiben möchte.
