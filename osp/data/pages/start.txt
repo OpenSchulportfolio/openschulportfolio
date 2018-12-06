@@ -1,7 +1,11 @@
 ====== Willkommen zu ihrem neuen Schulportfolio ======
+
 {{ :wiki:pagepacks:install.png?nolink&|}}
-Hier können Sie festlegen, mit welcher der mitgelieferten Seitenstrukturen Sie die Arbeit in Ihrem Portfolio beginnen möchten. Wenn Sie mit einem leeren Wiki beginnen möchten, wählen Sie die Option "Nur Startseite" aus.
 
-Wenn Sie wenig Erfahrung im Umgang mit einem Wiki haben, sollten Sie auf jeden Fall eine Struktur auswählen - Sie können diese jederzeit an Ihre Bedürfnisse anpassen.
+Sie sollten zunächst festlegen, mit welcher der mitgelieferten Seitenstrukturen Sie die Arbeit in Ihrem Portfolio beginnen möchten. Installieren sie hierfür das gewünschte "Seitenpaket".
 
-{{pagepackform>init}}
+  * [[?do=admin&page=pagepacks|Seitenpakete installieren]]
+
+Wenn Sie mit einem leeren Wiki beginnen möchten, wählen Sie die Option "Nur Startseite" aus. Wenn Sie nur wenig Erfahrung im Umgang mit einem Wiki haben, sollten Sie auf jeden Fall eine Struktur auswählen - Sie können diese jederzeit an Ihre Bedürfnisse anpassen.
+
+
