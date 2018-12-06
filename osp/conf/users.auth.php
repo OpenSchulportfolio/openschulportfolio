@@ -6,7 +6,5 @@
 #
 # Format:
 #
-# login:passwordhash:Real Name:email:groups,comma,seperated
-
-
-ospadmin:$1$M1l5yNIS$dAxZW3bwEbh4ETSc5gxSP0:OSP Adminstrator:ospadmin@localhost:admin,user
+# user:MD5password:Real Name:email:groups,comma,seperated
+admin:cbf915885771cd351a7cf6629356bc2a:Portfolio Administrator:mail@portfolio.nirgendwo:portfolioadm,users
