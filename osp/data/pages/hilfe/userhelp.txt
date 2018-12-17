@@ -1,0 +1,24 @@
+{{tag> hilfe}}
+
+====== Hilfe für Benutzer: Die Benutzeroberfläche von OSP =====
+
+Hier ein Überblick über die Portfolio-Oberfläche, die Erläuterungen finden sich unterhalb des Bildschirmfotos.
+
+{{  :hilfe:overview.png  |Überblick}}
+
+  - **Logo**: Oben links befindet sich das Seitenlogo. Wenn man auf das Bild oder die Schriftzüge klickt, gelangt man direkt zur Startseite des Portfolios. 
+  - **Hauptmenü**: Im Hauptmenü auf der linken Seiten finden sich Verweise auf verschiedene Seiten des Portfolios und/oder externe Seiten im Internet. Welche Links sich dort befinden, wird durch die Redaktion des Portfolios festgelegt und kann sich im Lauf der Zeit auch ändern.  
+  - **Exportlinks**: Durch einen Klick auf diese Links kann die aktuelle Seite in verschiedene andere Formate exportiert werden (HTML, PDF, Openoffice). Einen Export nach Word gibt es nicht, jedoch gibt es Erweiterungen für Word, mit denen man Openoffice Dokumente öffnen kann. Außerdem kann man Portfolioseiten zu einem "PDF-Buch" zusammenfassen.
+  - **Werkzeug-Box**: Hier gibt es -- je nach den Berechtigungen des angemeldeten Benutzers -- unterschiedliche nützliche Werzeuge zur Auswahl.
+  - **Benutzerinfos**: Oben rechts befindet sich ein Menü mit Infos über den angemeldeten Benutzer. Dort können Sie sich auch vom Portfolio abmelden. 
+  - **Suchfeld**: Hier können Sie das Portfolio nach Begriffen durchsuchen. Es werden alle Seiten des Portfolios durchsucht, jedoch //nicht// die Inhalte verlinkter Dateien in anderen Formaten. Auch Dateinamen in automatisch erzeugten Dateilisten werden nicht durch die Suche erfasst. Wenn der Betreuer des Portfolios die Möglichkeit eingerichtet hat, lässt sich die Suche durch Auswahl in der Ausklappliste links vom Suchfeld auf einzelne Bereiche des Portfolios einschränken.
+  - Direkte **Verweise auf wichtige Werkzeuge**, die das **gesamte Portfolio** betreffen.
+  - Der Name der **aktuellen Portfolioseite in Wiki-Schreibweise**.
+  - **Werkzeuge für die aktuelle Seite**.
+  - Menü für Werkzeuge, die die aktuelle Seite betreffen. Dieses Menü bleibt auch beim Scrollen der Seite stets sichtbar. 
+  - **Kopfnotiz**: Hier können durch die Portfolioredaktion Inhalte eingefügt werden, die auf jeder Portfolioseite angezeigt werden -- z.B. eine Menüleiste.
+  - ** Aktueller Pfad:** Oben links unterhalb des Logos wird die Stelle angezeigt, an der Sie sich  derzeit befinden. Durch anklicken eines Begriffes gelangen Sie direkt dorthin. Begriffe, die rot dargestellt sind, zeigen auf Seiten, die (noch) nicht existieren.
+  - **Schlagworte (Tags)**: Viele Seiten sind verschlagwortet, die Schlagworte, die der Seite zugeordnet sind werden oben rechts im Inhaltsbereich angezeigt. Durch Klick auf ein Schlagwort werden weitere Seiten mit demselbem Schlagwort angezeigt.
+  - **Seiteninhaltsverzeichnis**: Bei Seiten, die mehrere Überschriften haben, wird oben rechts im Inhaltsbereich automatisch ein Inhaltsverzeichnis angezeigt. Durch Klick auf eine Überschrift spring man direkt an die entsprechende Position auf der Seite. Durch einen Klick auf das "Minus"-Zeichen kann man das Menü ausblenden. 
+  - **Brotkrumen**: Hier werden die zuletzt vom Benutzer angesehenen Seiten aufgelistet -- durch Klick auf den Seitennamen, kann man so einfach zu kürzlich angesehenen Seiten zurücknavigieren.
+  - **Seiteninfo**:  Unten links in doppelten eckigen Klammern wird der Name der aktuellen Wiki-Seite angezeigt, außerdem der tatsächliche Dateiname der Seite und Zeit und Verantwortlicher der letzten Änderung.

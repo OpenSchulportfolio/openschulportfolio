@@ -1,0 +1,182 @@
+{{tag> redaktion hilfe}}
+====== Textstrukturierung ======
+
+Prinzipiell müssen Texte im Wiki **logisch** ausgezeichnet werden. Eine Überschrift hat die Funktion einer Abschnittsgliederung und sollte entsprechend ausgezeichnet werden - den Text einfach Fett zu machen reicht **nicht** aus.
+
+Die wichtigsten Strukturierungselemente sind
+
+  * Absätze
+  * Überschriften
+  * Listen und Aufzählungen
+
+Man kann auch Fußnoten anlegen, außerdem bietet das Wiki vier Arten von (farbigen) Textboxen, mit denen besondere Abschnitte hervorgehoben werden können.
+
+Tabellen sind möglich, sollten aber zurückhaltend eingesetzt werden, sie sind kein Mittel der Textstrukturierung.
+
+===== Absätze =====
+Ein Absatz wird durch eine leere Zeile erzeugt. \\
+<nowiki>Eine neue Zeile (Zeilenumbruch) kann durch zwei "backslashes" (umgekehrte Schrägstriche: \\) </nowiki>gefolgt von einem Leerzeichen erzeugt werden.\\ 
+
+Dies ist ein Beispieltext mit einigen Zeilenumbrüchen.\\ Beachte: die zwei umgekehrten Schrägstriche
+werden nur erkannt, wenn sie am Zeilenende stehen\\
+oder wenn ihnen ein\\ Leerzeichen folgt \\so sieht es ohne Leerzeichen aus.
+
+  Dies ist ein Beispieltext mit einigen Zeilenumbrüchen.\\ Beachte: die zwei umgekehrten Schrägstriche
+  werden nur erkannt, wenn sie am Zeilenende stehen\\
+  oder wenn ihnen ein\\ Leerzeichen folgt \\so sieht es ohne Leerzeichen aus.
+
+<note important>Zeilenumbrüche durch zwei "backslashes" (umgekehrte Schrägstriche: \\) sollten nur verwendet werden, wenn sie unbedingt gebraucht werden, da sich diese extrem ungünstig auf die Exportformate (PDF/Openoffice)auswirken können.
+</note>
+
+===== Überschriften =====
+Mit 5 unterschiedlichen Ebenen, getrennt durch Überschriften, kann der Inhalt einer Seite strukturiert werden.
+
+Die Überschriften werden mit maximal sechs "=" eingerahmt, je nach Größe.  H1 ist die Überschrift auf höchster Ebene. Am einfachsten zur Erzeugung der Überschriften die Symbolleiste verwenden und hier auf die die Buttons ''H1'', ''H2'' oder ''H3'' klicken.
+
+{{:hilfe:headings.png|}}
+
+<note important>Es sollte immer eine Level 1 Überschrift am Anfang einer Seite stehen.</note>
+
+Wenn in einer Seite mehr als 3 Überschriften vorkommen, wird automatisch ein Inhaltsverzeichnis erstellt, welches alle Überschriften auflistet.
+
+Soll dieses Inhaltsverzeichnis nicht erstellt werden, muss der Befehl: ''<nowiki>~~NOTOC~~</nowiki>'' an beliebiger Stell mit in die Seite aufgenommen werden - bevorzugt ganz oben.
+
+  ====== Überschrift Ebene 1 ======
+  ===== Überschrift Ebene 2 =====
+  ==== Überschrift Ebene 3 ====
+  === Überschrift Ebene 4 ===
+  == Überschrift Ebene 5 ==
+
+-> Innerhalb von Überschriften können keine weiteren Formatierungen vorgenommen werden!
+
+
+===== Listen und Aufzählungen =====
+ 
+DokuWiki kennt unsortierte und nummerierte Listen. Um einen Listeneintrag zu erzeugen, beginne eine Zeile mit 2 Leerzeichen. Diesen Leerzeichen folgt dann ein ''*'' für unsortierte oder ein ''-'' für nummerierte Listen.  
+
+  * Dies ist ein Eintrag einer unsortierten Liste
+  * Ein zweiter Eintrag
+    * Unterschiedliche Ebenen einer Liste durch Hinzufügen von weiteren 2 Leerzeichen
+  * Noch ein Eintrag
+
+  - Dies ist ein Eintrag einer nummerierte Liste
+  - Ein zweiter Eintrag
+    - Unterschiedliche Ebenen einer Liste durch Hinzufügen von weiteren 2 Leerzeichen
+  - Noch ein Eintrag
+
+<code>
+  * Dies ist ein Eintrag einer unsortierten Liste
+  * Ein zweiter Eintrag
+    * Unterschiedliche Ebenen einer Liste durch Hinzufügen von weiteren 2 Leerzeichen
+  * Noch ein Eintrag
+
+  - Dies ist ein Eintrag einer nummerierte Liste
+  - Ein zweiter Eintrag
+    - Unterschiedliche Ebenen einer Liste durch Hinzufügen von weiteren 2 Leerzeichen
+  - Noch ein Eintrag
+</code>
+
+
+===== Fußnoten =====
+
+Fußnoten können in doppelten runden Klammern direkt im Text eingefügt werden ((Die Fußnote wird dann verlinkt und erscheint, wenn man mit der  Maus über der Link fährt)).
+
+  Fußnoten können direkt im Text eingefügt werden 
+  ((Die Fußnote wird dann verlinkt und erscheint, wenn man mit der  Maus über der Link
+  fährt)).
+
+===== Textboxen =====
+
+Man kann vier verschiedene Textboxen verwenden:
+
+<note>Notiz</note>
+  <note>Notiz</note>
+
+<note tip>Info</note>
+  <note tip>Info</note>
+  
+<note important>Wichtig</note>
+
+  <note important>Wichtig</note> 
+ 
+<note warning>Warnung</note>
+  <note warning>Warnung</note>
+ 
+Am einfachsten lassen sich diese über die Schaltflächen in der Menüleiste des Editors einfügen.{{:hilfe:boxes.png|}}
+
+
+
+
+====== Formatierungen ======
+
+DokuWiki unterstützt **fetten**, //kursiven//, __unterstrichenen__ und ''monospaced'' Text. Natürlich kann auch alles **__//''kombiniert''//__** werden. \\
+
+  DokuWiki unterstützt **fetten**, //kursiven//, __unterstrichenen__ und ''monospaced'' Text. 
+  Natürlich kann auch alles **__''kombiniert''//__** werden.
+
+Ebenso gibt es <sub>tiefgestellten</sub> und <sup>hochgestellten</sup> Text.
+
+  Ebenso gibt es <sub>tiefgestellten</sub> und <sup>hochgestellten</sup> Text.
+
+Text kann als gelöscht <del>deleted</del> markiert werden.
+
+  Text kann als gelöscht <del>deleted</del> markiert werden.
+
+
+
+
+===== Unformatierte Abschnitte =====
+
+Um Text so anzuzeigen, wie er geschrieben wurde, egal ob er DokuWiki Formatierungen oder andere Formatierungen enthält, kann man jede
+Zeile mit zwei Leerzeichen beginnen (so wie es in dieser Seite angewendet wurde) oder einen der Bezeichner "code" bzw "file" benutzen:
+
+<code>
+Mit "code": In diesem Text werden keine überflüssigen Leerzeichen entfernt: wie hier              <-- zwischen
+</code>
+
+<file>
+Mit "file": Eigentlich das Gleiche wie oben, sieht nur etwas anders aus. \\ 
+Vielleicht um Zitate zu kennzeichnen oder ähnliches.
+</file>
+
+Um jegliche Umwandlung durch DokuWiki abzustellen, umschließe den entsprechenden Bereich mit "nowiki" Bezeichnern oder kürzer mit doppelten Prozentzeichen ''<nowiki>%%</nowiki>''.
+
+<nowiki>
+Dieser Text enthält links wie: http://www.splitbrain.org und **Formatierungen** aber sie werden nicht umgesetzt und erscheinen als normaler Text.
+</nowiki>
+
+Einfach den Quelltext dieser Seite anschauen (den Knopf "edit" drücken) um zu sehen, wie diese Blöcke angewendet werden.
+
+
+
+===== Zitate/Kommentare =====
+Um einen Text als Zitat oder Kommentar zu kennzeichen, wird das "größer als" - Zeichen folgendermaßen verwendet:
+
+  Ich denke wir sollten es tun.
+  
+  > Nein, sollten wir nicht.
+  
+  >> Doch!
+  
+  > Wirklich?
+  
+  >> Ja!
+  
+  >>> Dann lass es uns tun!
+  
+  >>> Kommentare oder Zitate können auch über mehrere Zeilen gehen, wie dieser völlig unsinnige Text zeigt. Um einen Text als Zitat oder Kommentar zu kennzeichen, wird das "größer als" - Zeichen folgendermaßen verwendet
+
+Ich denke wir sollten es tun
+
+> Nein, sollten wir nicht.
+
+>> Doch!
+
+> Wirklich?
+
+>> Ja!
+
+>>> Dann lass es uns tun
+
+>>> Kommentare oder Zitate können auch über mehrere Zeilen gehen, wie dieser völlig unsinnige Text zeigt. Um einen Text als Zitat oder Kommentar zu kennzeichnen, wird das "größer als" - Zeichen folgendermaßen verwendet
+

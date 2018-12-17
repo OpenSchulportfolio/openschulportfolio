@@ -1,0 +1,33 @@
+{{tag> redaktion hilfe}}
+
+====== Dateien und Bilder in das Wiki hochladen ======
+
+Um Dateien oder Bilder im Wiki verwenden zu können, müssen diese zunächst auf den Server auf dem das System installiert ist hochgeladen werden. DokuWiki bringt zu diesem Zweck einen "Medienmanager" mit.
+
+Diesen kann man mit durch einen Klick auf die Editorschaltfläche mit dem Bilderrahmen öffnen:
+{{:hilfe:mmbutton.png?550|}}
+
+Damit öffnet sich ein neues Fenster welches die Dateien des Namensraums anzeigt, in dem sich die Seite Befindet, die man gerade bearbeitet:
+
+{{:hilfe:mmanager.png?670|}}
+
+  * Links sieht man die Liste der Namensräume - was die Dateien angeht, sind das Unterverzeichnisse. 
+  * Rechts oben sieht man den Dialog, um eine einzelne Datei hochzuladen:
+    - ''Datei zum Hochladen auswählen'': Datei auf der lokalen Festplatte wählen
+    - Wenn man möchte, kann man in der Zeile darunter angeben, wie die Datei heißen soll, wenn Sie im Wiki gelandet ist. Lässt man dieses Feld leer, wird die Datei beim Hochladen nicht umbenannt.
+    - Um den Uploadvorgang zu starten , klickt man die Schaltfläche ''Hochladen'' an.
+
+Um eine Datei zu ersetzen, muss man das Häckchen bei ''Bestehende Datei überschreiben'' setzen. 
+
+===== Mehrere Dateien hochladen =====
+Ein Klick auf die 4 grünen Aufwärtspfeile öffnet einen weitgehend selbsterklärenden Dialog, bei dem man mehrere lokale Dateien auf einmal auswählen und Hochladen kann.
+
+{{:hilfe:multiupload.png|}}
+
+===== Dateien und Bilder in eine Wikiseite einfügen =====
+
+Wenn man die Dateien/Bilder hochgeladen hat, werden Sie in der Liste auf der rechten Seite angezeigt. Durch einfachen Klich auf eine Datei wird der Verweis auf die Datei/das Bild in die Wiki-Seite eingefügt, von der aus man den Medienmanager aufgerufen hat. 
+
+  * [[bilder|Weitergehende Formatierungsmöglichkeiten für so eingefügte Bilder]]
+  * [[dateien|Weitergehende Möglichkeiten für so eingefügte/hochgeladene Dateien]]
+

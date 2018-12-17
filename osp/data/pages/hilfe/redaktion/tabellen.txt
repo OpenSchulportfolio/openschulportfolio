@@ -1,0 +1,75 @@
+{{tag> redaktion hilfe}}
+====== Tabellen ======
+
+===== Grundlegende Tabellenfunktionen =====
+
+
+Mit DokuWiki können Tabellen ganz einfach erstellt werden: 
+
+^ hervorgehoben   ^ zum Beispiel für   ^ eine Titelzeile           ^
+| Zeile 1 Spalte 1    | Zeile 1 Spalte 2     | Zeile 1 Spalte 3        |
+| Zeile 2 Spalte 1    | doppelte Spaltenbreite (beachte den doppelten senkrechten Strich) ||
+| Zeile 3 Spalte 1    | Zeile2 Spalte 2      | Zeile 2 Spalte 3        |
+
+Felder einer Tabelle starten mit "|" für ein normales Feld oder mit einem "^" für hervorgehobenes Feld.
+
+  ^ hervorgehoben   ^ zum Beispiel für   ^ Titelzeile           ^
+  | Zeile 1 Spalte 1    | Zeile 1 Spalte 2     | Zeile 1 Spalte 3        |
+  | Zeile 2 Spalte 1    | doppelte Spaltenbreite (beachte den doppelten senkrechten Strich) ||
+  | Zeile 3 Spalte 1    | Zeile2 Spalte 2      | Zeile 2 Spalte 3        |
+
+Zellen über mehrere Spalten werden erzeugt, wenn man, wie oben gezeigt, am Ende einer solchen Spalte soviele "|" oder "^" ohne Leerzeichen dazwischen hintereinander setzt, wie Spalten überbrückt werden.\\
+Kurz gesagt: Alle Zeilen einer Tabelle müssen die gleiche Anzahl an Feldtrennern "|" oder "^" haben.
+
+Hervorgehobene Felder in Vertikaler Ausrichtung sind auch möglich.
+
+|              ^ hervorgehoben 1            ^ hervorgehoben 2          ^
+^ hervorgehoben 3    | Zeile 1 Spalte 2          | Zeile 1 Spalte 3        |
+^ hervorgehoben 4    | Zeile 2 Spalte 2  |                    |
+^ hervorgehoben 5    | Zeile 3 Spalte 2          | Zeile 3 Spalte 3        |
+
+Wie wir sehen, entscheidet der Feldtrenner ("|" oder "^") vor einer Zelle über ihr Aussehen:
+
+  |              ^ hervorgehoben 1            ^ hervorgehoben 2          ^
+  ^ hervorgehoben 3    | Zeile 1 Spalte 2          | Zeile 1 Spalte 3        |
+  ^ hervorgehoben 4    | Zeile 2 Spalte 2  |                    |
+  ^ hervorgehoben 5    | Zeile 3 Spalte 2          | Zeile 3 Spalte 3        |
+
+Anmerkung: Felder über mehrere Zeilen werden nicht unterstützt.
+
+  *Der Inhalt einer Zelle kann horizontal ausgerichtet werden. Füge 2 Leerzeichen hinzu:\\
+    * 2 Leerzeichen Links vom Text: rechtsbündig
+    * 2 Leerzeichen Rechts vom Text: linksbündig
+    * 2 Leerzeichen Rinks und Rechts vom Text: zentriert
+
+^          Tabelle mit Ausrichtung         ^^^
+|        Rechts|    Mitte     |Links         |
+|Links         |        Rechts|    Mitte     |
+| xxxxxxxxxxxx | xxxxxxxxxxxx | xxxxxxxxxxxx |
+
+So sieht die Formatierung aus:
+
+  ^          Tabelle mit Ausrichtung         ^^^
+  |        Rechts|    Mitte     |Links         |
+  |Links         |        Rechts|    Mitte     |
+  | xxxxxxxxxxxx | xxxxxxxxxxxx | xxxxxxxxxxxx |
+
+===== Tabellenzellen einfärben =====
+
+Mit im folgenden Beispiel dargestellt, kann man den Hintergrund von Tabellenzellen  einfärben.
+  ^  Header 1         ^  Header 2  ^  Header 3        ^
+  |  @lightgreen:**Verbundene Zellen**         ||                  |
+  |  @#6495ed:Zeile 1 |  Ja       |  Ja  |
+  |  Zeile 2           |  Ja       |  @orange: Jepp    |
+  |  @:Zeile 3        |  Ja       | @red:Nein         |
+
+^  Header 1         ^  Header 2  ^  Header 3        ^
+|  @lightgreen:**Verbundene Zellen**         ||                  |
+|  @#6495ed:Zeile 1 |  Ja       |  Ja  |
+|  Zeile 2           |  Ja       |  @orange: Jepp    |
+|  @:Zeile 3        |  Ja       | @red:Nein         |
+
+
+Dabei wird dem Zelleninhalt die Farbe mit ''@farbcode:'' vorangestellt. Ausrichtung und weitere Textformate wie Fett, Kursiv u.ä. können weiterhin verwendet werden. 
+
+Als Farbcode kann man sowohl Hexadezimale RGB Farbcodes angeben, als auch HTML-Farbnamen.

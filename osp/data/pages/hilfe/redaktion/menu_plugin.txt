@@ -1,0 +1,50 @@
+====== Menüs mit dem menu-Plugin ======
+
+open|Schulportfolio wird standardmäßig mit dem Plugin //menu// ausgeliefert. Dieses erlaubt es, hübsche Menüs mit Bildchen zu erstellen.
+
+====== Menüs in Spalten ======
+
+Als Beispiel soll ein Menü mit mehreren Spalten dienen, das wie folgt aussieht:
+
+{{ :hilfe:menu01.png |}}
+
+Der Code, der dieses Menü erzeugt sieht zunächst zwar kompliziert aus -man sollte Ihn also auch nicht abschreiben, sondern kopieren und verändern:
+
+  <menu col=2,align="left",caption="">
+  <item>Aktuelles|Klassen- und Kurslisten, Stundenpläne und mehr...|aktuelles:start|shared:icons:software-update-available-50x50.png</item>
+  <item>Oberstufe|Alle Informationen zur Oberstufenorganisation|:portfolio:organisation:oberstufenberatung:start|:shared:icons:go-up-50x50.png</item>  
+  <item>Formularcenter|Die Formularschublade "online"|aktuelles:formulare:start|:shared:icons:document-open-50x50.png</item>
+  <item>Leitfaden|Ein praxistauglicher Rundgang durch unsere Schule|aktuelles:leitfaden|:shared:icons:help50.png</item>
+  </menu>
+
+Das gesamte Menü wird umschlossen von ''<menu col=2,align=left, caption="">'' und ''</menu>''. 
+Durch die Option **''col=2''** wird festgelegt, dass das Menü 2 Spalten haben soll.
+
+Zwischen diesen Markierungen steht für jeden Menüpunkt eine Zeile, die immer die Form 
+  <item>Bezeichnung|Erklärungstext|Link zu Seite|Bilddatei</item>
+hat.
+
+Kopieren Sie den Code für das Menü einfach mal in eine Testseite, ändern Sie ''cols=2'' in ''cols=3'' und beobachten Sie die Auswirkungen Ihrer Änderungen.
+
+Ein genauere Erklärung der Optionen finden Sie auf [[http://www.dokuwiki.org/plugin:menu|den Seiten des Plugin-Autors]].
+
+===== Zeilenmenü für das Hauptmenü =====
+
+Die in OSP enthaltene Version des Menu-Plugins kann zu den vom Autor vorgesehenen Spaltenmenüs außerdem ein Zeilenmeü erzeugen, wie Sie es im Hauptmenü oder in folgenden Screenshot sehen.
+
+{{  :hilfe:menu02.png  |}}
+
+Ein Menü dieser Art wird durch Code der folgenden Form erzeugt:
+
+  <menu col=1,align=left,caption="",type="menubar">
+  <item>V-plan|Vertretungsplan|aktuelles:vertretungsplan|:shared:icons:vplan40x40.png</item>
+  <item>MRBS|Raum und Medienbuchung|https://albert.aeg-reutlingen.de/mrbs/|:shared:icons:beamer-40x40.png</item> 
+  <item>EDV-Hilfe|EDV-Hilfe|portfolio:konzept:medien:start|:shared:icons:network-transmit-40x40.png</item>
+  </menu>
+
+Es gibt zwei Unterschiede zum Spaltenmenü:
+
+  * Das öffnende ''<menu>'' hat als zusätzliche Option ''type=menubar''.
+  * Der erste Bezeichner zwischen den ''|'' ist der Text unter dem Icon, der zweite erscheint, wenn man mit der Maus über das Icon fährt.
+
+Probieren Sie es im Hauptmenü aus!

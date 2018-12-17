@@ -1,0 +1,48 @@
+{{tag> redaktion hilfe}}
+====== Bilder einfügen ======
+
+Zuerst muss man das Bild [[fileupload|auf den Server hochladen]] . Anschließend kann man Größe und Position des Bilds anpassen.
+
+
+
+
+===== Größe von Bildern  =====
+Mit geschweiften Klammern können sowohl externe als auch interne Bildereingebunden werden. Optional kann deren Größe angegeben werden:
+
+Original Größe:                      {{wiki:dokuwiki-128.png}}
+
+  Original Größe:                        {{wiki:dokuwiki-128.png}}
+
+Eine Breite vorgeben:                {{wiki:dokuwiki-128.png?50}}
+
+   Eine Breite vorgeben:                  {{wiki:dokuwiki-128.png?50}}
+
+Breite und Höhe vorgeben:            {{wiki:dokuwiki-128.png?200x50}}
+  
+    Breite und Höhe vorgeben:              {{wiki:dokuwiki-128.png?200x50}}
+
+Größe für externe Bilder vorgeben:   {{http://de3.php.net/images/php.gif?200x50}}
+
+  Größe für externe Bilder vorgeben:     {{http://de3.php.net/images/php.gif?200x50}}
+
+<note warning>Externe Bilder sollte man **nicht verwenden**, da dies großen Ärger mit eventuell nicht beachtetem Urheberrecht bedeuten kann. Auf dem Server, auf dem sich das Bild befindet wird bei jedem Aufruf der Wiki-Seite eine Spur zum Wiki hinterlassen!</note>
+
+===== Ausrichten von Bildern =====
+Mit Leerzeichen zur Rechten und/oder Linken innerhalb der Klammern kann ein Bild horizontal ausgerichtet werden(links, mitte, rechts).
+
+{{ wiki:dokuwiki-128.png}}
+
+{{wiki:dokuwiki-128.png }}
+
+{{ wiki:dokuwiki-128.png }}
+
+  Rechts    {{ wiki:dokuwiki-128.png}}
+  Links     {{wiki:dokuwiki-128.png }}
+  Zentriert {{ wiki:dokuwiki-128.png }}
+
+===== Tooltips =====
+Auch Titel, in den meisten Browsern als Tooltip angezeigt, können angegeben werden. Man sieht den Tooltip, wenn man mit der Maus über das Bild fährt.
+
+{{ wiki:dokuwiki-128.png |Dies ist ein Titel}}
+
+  {{ wiki:dokuwiki-128.png |Dies ist ein Titel}}

@@ -1,0 +1,75 @@
+{{tag> redaktion hilfe}}
+
+====== Einbinden von Dateien in Wiki-Seiten ======
+
+Zunächst muss man Dateien, wie in Wikiseiten eingebunden werden sollen [[fileupload|in das Wiki hochgeladen werden]]. Anschließend gibt es unterschiedliche Möglichkeiten, die Dateien innerhalb einer Wikiseite anzuzeigen.
+
+===== Link auf eine einzelne Datei =====
+
+Einen Link auf eine Datei in einer Wikiseite erhält man, indem man die entsprechende Datei im Medienmanager anklickt. Damit wird der Link in die zur Bearbeitung geöffneten Seite eingefügt.
+
+{{hilfe:dokuwiki.odt |}}
+
+{{hilfe:dokuwiki.odt |Beispiel mit eigenem Text als Link}}
+
+  {{hilfe:dokuwiki.odt |}}
+  
+  {{hilfe:dokuwiki.odt |Beispiel mit eigenem Text als Link}}
+  
+===== Dateilisten automatisch erzeugen =====
+
+Die Erweiterung ''filelist'' ermöglicht es Dateien in einem Verzeichnisbaum als Tabellen oder Listen innerhalb einer Wikiseite darzustellen.
+
+<note important>Achtung: Die Dateinamen in den automatisch erstellten Tabellen und Listen können nicht mit der Suchfunktion des Wikis gefunden werden - man sollte also zu jeder Tabelle oder Liste noch eine Liste mit Stichworten anlegen, die zum Auffinden der Dateien dienen könnten.</note>
+
+===== Dateien eines Verzeichnisses als Tabelle =====
+
+Am besten kopiert man die folgende Zeila an Ort und Stelle und passt dann das Verzeichnis und die Dateiart an:
+
+  {{filelist>:formulare:*&style=table&tableheader=1&tableshowdate=1&tableshowsize=1}}
+             ^^^^^^^^^^^^ 
+              Verzeichnis       Das "*" steht für "alle
+              Durch Doppel-     Dateien. *.odt würde nur die odt 
+              punkte getrennt.  auflisten.
+
+==== Beispiele ====
+
+  * Alle "doc"-Dateien im Verzeichnis '':formulare:''
+
+  {{filelist>:formulare:*.doc&style=table&tableheader=1&tableshowdate=1&tableshowsize=1}}
+           
+{{filelist>:formulare:*.doc&style=table&tableheader=1&tableshowdate=1&tableshowsize=1}}
+
+  * Alle Dateien im Verzeichnis '':formulare:inventarliste:''
+
+  {{filelist>:formulare:inventarliste:*&style=table&tableheader=1&tableshowdate=1&tableshowsize=1}}
+           
+{{filelist>:formulare:inventarliste:*&style=table&tableheader=1&tableshowdate=1&tableshowsize=1}}
+
+
+\\
+<note tip>
+Eine Vereinfachung für das schnelle Einfügen einer tabellarischen Dateiliste ist:
+  {{simplefilelist>:formulare:inventarliste:*}}
+Dabei muss man keine weiteren Optionen angeben.
+  
+{{simplefilelist>:formulare:inventarliste:*}}
+
+\\ Nun wird am oberen Rand der Tabelle ein Verweis zu direkten Befüllen der Liste angezeigt.
+
+</note>
+===== Alle Dateien eines Verzeichnisses und seiner Unterverzeichnisse als Liste =====
+
+Man kann auch einen ganzen Dateibaum rekursiv darstellen lassen, allerdings nicht als Tabelle sondern als Liste.
+
+  {{filelist>:pruefungen:dva:2006:*&style=page&recursive=1}}
+              ^^^^^^^^^^^^^^^
+              Startverzeichnis
+              
+Der Befehl würde also beginnend beim Verzeichnis '':pruefungen:dva:2006:'' alle Dateien auflisten, die sich in diesem Verzeichnis oder einem Unterverzeichnis dieses Verzeichnisses befinden.
+
+Für jedes Verzeichnis wir der Inhalt einer dort vorhandenen Datei mit dem Namen ''_title.txt'' als Überschrift verwendet, diese Datei selbst wird aber nicht mit aufgelistet (auch nicht im Medienmanager - Achtung Verwirrung!)
+
+==== So sieht das dann aus: ====
+
+{{filelist>:hilfe:*&style=page&recursive=1}}

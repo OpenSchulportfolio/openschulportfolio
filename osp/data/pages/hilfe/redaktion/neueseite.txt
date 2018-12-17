@@ -1,0 +1,41 @@
+{{tag> redakteure hilfe}}
+
+====== Wie erstellt man eine neue Seite? ======
+
+Man erstellt einen Verweis auf eine nicht existierende Seite, klickt diesen dann an und legt anschließend die Seite an.
+
+  [[nonexist|Diese Seite gibt es noch nicht]]
+
+[[nonexist|Diese Seite gibt es noch nicht]]
+
+Vor dem senkrechten Strich steht dabei der Name der neuen Seite, nach dem senkrechten Strich der Text, der angeklickt werden kann.
+
+Dieses Standardvorgehen erstellt stets eine neue Seite in dem Verzeichnis, in dem sich die Seite befinden, auf der man den Verweis einfügt. In diesem Beispiel befinden wir uns auf der Seite ''hilfe->redaktion->neueseite'', also im Verzeichnis ''hilfe''. Die neue Seite würde folglich als 
+''hilfe->redaktion->nonexist'' angelegt werden, was man nach einem Klick auf den Link verifizieren kann, indem man im Tab oben rechts schaut, ob das Ergebnis den Erwartungen entspricht. Die folgende Grafik veranschaulicht den Vorgang.
+
+{{ :hilfe:newpage.png?nolink&700 |}}
+
+====== Erstellen eines Unterverzeichnisses ======
+
+Um ein Unterverzeichnis anzulegen, legt man die Seite ''start'' in einem neuen Verzeichnis an. Man muss aufpassen, da das Wiki standardmäßig Unterverzeichnisse stets am Beginn der Hierarchie anlegt:
+
+
+  [[unterverzeichnis:start|Neue Seite in Unterverzeichnis]]
+
+
+{{ :hilfe:uvz1.png?nolink  |}}
+
+[[unterverzeichnis:start|Neue Seite in Unterverzeichnis]] legt also eine Seite ''start'' an, die sich im Verzeichnis ''unterverzeichnis'' befindet, wobei sich das anzulegende Unterverzeichnis ganz am Beginn der Verzeichnisstruktur befindet. **Das möchte man meist nicht so haben!**
+
+===== Relative Unterverzeichnisse =====
+
+
+  [[.unterverzeichnis:start|Neue Seite in Unterverzeichnis von hilfe/redaktion]]
+
+{{ :hilfe:uvz2.png?nolink  |}}
+
+[[.unterverzeichnis:start|Neue Seite in Unterverzeichnis von hilfe/redaktion]] legt eine Seite ''start'' an, die sich im Verzeichnis ''hilfe->redaktion->unterverzeichnis'' befindet. 
+
+<note tip>
+**Wenn man also ein Unterverzeichnis im aktuellen Verzeichnis erstellen möchte, beginnt man mit einem .(Punkt) gefolgt vom gewünschten Verzeichnisnamen und dem Seitennamen ''start''**</note>
+
