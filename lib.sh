@@ -25,7 +25,7 @@ fetchAndInstall() {
     fi
 
     if [[ ! -s "$CACHE/$DL" ]]; then
-        wget "$SRC" -O "$CACHE/$DL" || die 'Download failed'
+        wget "$SRC" -O "$CACHE/$DL"  || die 'Download failed'
     fi
 
     mkdir -p "$OUT/$DST"

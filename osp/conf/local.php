@@ -24,5 +24,6 @@ $conf['plugin']['include']['showcomments'] = 0;
 $conf['plugin']['include']['showlinkbacks'] = 0;
 $conf['plugin']['include']['showtags'] = 0;
 $conf['plugin']['include']['noheader'] = '1';
+$conf['plugin']['talkpage']['showbutton'] = 0;
 $conf['defaultgroup'] = 'users';
 
