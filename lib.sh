@@ -16,6 +16,9 @@ die() {
 fetchAndInstall() {
     SRC=$1
     DST=$2
+    
+    echo 
+    echo "INFO: fetchAnd Install $1"
 
     if [[ -z "$DST" ]]; then
         DL='dokuwiki.archive'
@@ -25,16 +28,24 @@ fetchAndInstall() {
     fi
 
     if [[ ! -s "$CACHE/$DL" ]]; then
-        wget "$SRC" -O "$CACHE/$DL"  || die 'Download failed'
+        echo -n " Getting $SRC ..." 
+        wget "$SRC" -O "$CACHE/$DL" > /dev/null 2>&1 || die 'Download failed'
+        echo " done."
+    else 
+        echo " CACHED: $SRC"
     fi
 
     mkdir -p "$OUT/$DST"
 
 
     if file -b "$CACHE/$DL" | grep 'Zip archive'; then
-        unzip "$CACHE/$DL" -d "$OUT/$DST/"  || die 'Failed to extract ZIP archive'
+        echo -n " Unzipping $CACHE/$DL ..." 
+        unzip "$CACHE/$DL" -d "$OUT/$DST/"  > /dev/null 2>&1 || die 'Failed to extract ZIP archive'
+        echo " done."
     else
-        tar -xzvf "$CACHE/$DL" --strip-components 1 -C "$OUT/$DST" || die 'Failed to extract TGZ archive'
+        echo -n " Untaring $CACHE/$DL ..." 
+        tar -xzvf "$CACHE/$DL" --strip-components 1 -C "$OUT/$DST" > /dev/null 2>&1 || die 'Failed to extract TGZ archive'
+        echo " done."
     fi
 }
 

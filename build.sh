@@ -1,15 +1,29 @@
 #!/usr/bin/env bash
 
 source "lib.sh"
+source "version"
 
 # where to store the downloads?
 CACHE="cache"
-mkdir -p "$CACHE"
 
 # where to prepare the install data?
 OUT="openschulportfolio"
+
+if [ "x$1" == "xclean" ]; then 
+    echo 
+    echo "INFO: Cleaning up"
+    echo -n " Removing cache.."
+    rm -rf $CACHE
+    echo " done."
+    echo -n " Removing OSP builds..."
+    rm -rf ${OUT}*.tgz  
+    rm -rf ${OUT}*.zip  
+    echo " done."
+fi
+
 rm -rf "$OUT"
 mkdir -p "$OUT"
+mkdir -p "$CACHE"
 
 # where to source additional files?
 FILES="osp"
@@ -25,6 +39,7 @@ githubInstall "OpenSchulportfolio/dokuwiki-plugin-osp-pagepacks"     "lib/plugin
 githubInstall "OpenSchulportfolio/dokuwiki-plugin-shorturl"          "lib/plugins/shorturl"
 
 githubInstall "tatewake/dokuwiki-plugin-backup"             "lib/plugins/backup"
+githubInstall "rztuc/dokuwiki-plugin-authchained"           "lib/plugins/authchained"
 githubInstall "dokufreaks/plugin-blockquote"                "lib/plugins/blockquote"
 githubInstall "dokufreaks/plugin-blog"                      "lib/plugins/blog"
 githubInstall "Klap-in/dokuwiki-plugin-bookcreator"         "lib/plugins/bookcreator"
@@ -55,7 +70,36 @@ githubInstall "dokufreaks/plugin-task"                      "lib/plugins/task"
 githubInstall "OpenSchulportfolio/dokuwiki-template-portfolio"       "lib/tpl/portfolio2"
 
 # copy additional files
-cp -av "$FILES/"* "$OUT/"
+echo 
+echo -n "INFO: Copy files from osp to build area..."
+cp -a "$FILES/"* "$OUT/"
+echo " done."
 
-# create tar file
-tar -czvf "$OUT.tgz" "$OUT"
+echo 
+echo "INFO: Applying patches" 
+for patch in $(find patches -name '*.patch'); do 
+    filetopatch=${patch%*.patch}
+    filetopatch=${filetopatch#patches/}
+    filetopatch=${OUT}/$filetopatch
+    patch  -u $filetopatch  -i $patch
+
+done
+
+
+echo
+echo "INFO: Creating packages"
+echo -n " Creating install package (tar)..."
+tar -czf "${OUT}-${version}-install.tgz" "$OUT"
+echo " done."
+echo -n " Creating install package (zip)..."
+zip -q -r "${OUT}-${version}-install.zip" "$OUT"
+echo " done."
+
+
+rm -rf ${OUT}/conf
+echo -n " Creating update package (tar)..."
+tar -czf "${OUT}-${version}-update.tgz" "$OUT"
+echo " done."
+echo -n " Creating update  package (zip)..."
+zip -q -r "${OUT}-${version}-update.zip" "$OUT"
+echo " done."

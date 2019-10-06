@@ -1,0 +1,20 @@
+--- openschulportfolio/lib/plugins/authldap/auth.php	2019-01-06 10:18:47.000000000 +0100
++++ /srv/spo/customers/zz99-devel/portfolio/lib/plugins/authldap/auth.php	2019-10-06 15:13:05.927061192 +0200
+@@ -283,6 +283,17 @@
+                     }
+                     if($group === '') continue;
+ 
++                    # Enabling groupdelprefix option for 
++                    # integration in linuxmuster.net 6.x 
++                    # June 06 2010
++                    # Frank Schiebel <frank@linuxmuster.net>)
++                    if ($this->getConf('groupdelprefix') != "") {
++                            $prefix = $this->getConf('groupdelprefix');
++                            if ( strpos($group, $prefix) !== false ) {
++                                $this->_debug('LDAP groupdelprefix: Removing '.htmlspecialchars($prefix) . ' from ' .htmlspecialchars($group), 0, __LINE__, __FILE__);
++                                $group = preg_replace("/^$prefix/", '', $group);
++                            }
++                    }
+                     $this->_debug('LDAP usergroup: '.htmlspecialchars($group), 0, __LINE__, __FILE__);
+                     $info['grps'][] = $group;
+                 }
