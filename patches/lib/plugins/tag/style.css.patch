@@ -1,0 +1,12 @@
+--- openschulportfolio/lib/plugins/tag/style.css	2019-10-06 18:43:23.796513983 +0200
++++ style.css	2019-10-06 18:44:44.176513983 +0200
+@@ -5,8 +5,7 @@
+ }
+ 
+ div.dokuwiki div.tags {
+-  border-top: 2px dotted __border__;
+-  clear: both;
++  border-top: 0;
+   margin-bottom: 1.4em;
+ }
+ 

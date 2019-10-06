@@ -97,6 +97,7 @@ echo " done."
 
 
 rm -rf ${OUT}/conf
+rm -rf ${OUT}/data
 echo -n " Creating update package (tar)..."
 tar -czf "${OUT}-${version}-update.tgz" "$OUT"
 echo " done."
