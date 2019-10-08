@@ -76,6 +76,12 @@ cp -a "$FILES/"* "$OUT/"
 echo " done."
 
 echo 
+echo -n "INFO: Removing install.php and fixsettings.php..."
+rm -r "$OUT/fixsettings.php"
+rm -r "$OUT/install.php"
+echo " done."
+
+echo 
 echo "INFO: Applying patches" 
 for patch in $(find patches -name '*.patch'); do 
     filetopatch=${patch%*.patch}
