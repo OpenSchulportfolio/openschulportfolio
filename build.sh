@@ -37,6 +37,8 @@ githubInstall "OpenSchulportfolio/dokuwiki-doctree2filelist"         "lib/plugin
 githubInstall "OpenSchulportfolio/dokuwiki-plugin-menu"              "lib/plugins/menu"
 githubInstall "OpenSchulportfolio/dokuwiki-plugin-osp-pagepacks"     "lib/plugins/pagepacks"
 githubInstall "OpenSchulportfolio/dokuwiki-plugin-shorturl"          "lib/plugins/shorturl"
+githubInstall "OpenSchulportfolio/dokuwiki-plugin-osp-filelist"      "lib/plugins/filelist"
+githubInstall "OpenSchulportfolio/dokuwiki-plugin-osp-newpagelink"   "lib/plugins/newpagelink"
 
 githubInstall "tatewake/dokuwiki-plugin-backup"             "lib/plugins/backup"
 githubInstall "rztuc/dokuwiki-plugin-authchained"           "lib/plugins/authchained"
@@ -48,12 +50,8 @@ githubInstall "cosmocode/changes"                           "lib/plugins/changes
 githubInstall "dokufreaks/plugin-cloud"                     "lib/plugins/cloud"
 githubInstall "dwp-forge/columns"                           "lib/plugins/columns"
 githubInstall "LarsGit223/dokuwiki-plugin-definitionlist"   "lib/plugins/definitionlist"
-#githubInstall "tatewake/dokuwiki-plugin-displaywikipage"    "lib/plugins/displaywikipage"
 githubInstall "splitbrain/dokuwiki-plugin-dw2pdf"           "lib/plugins/dw2pdf"
 githubInstall "cosmocode/edittable"                         "lib/plugins/edittable"
-githubInstall "dokufreaks/plugin-filelist"                  "lib/plugins/filelist"
-githubInstall "cosmocode/dokuwiki-plugin-simplefilelist"    "lib/plugins/simplefilelist"
-#githubInstall "" "lib/plugins/forcessl"
 fetchAndInstall "https://github.com/real-or-random/dokuwiki-plugin-icalevents/releases/download/2017-06-16/dokuwiki-plugin-icalevents-2017-06-16.zip" "lib/plugins/icalevents"
 githubInstall "dokufreaks/plugin-include"                   "lib/plugins/include"
 githubInstall "cosmocode/dokuwiki-plugin-mediarename"       "lib/plugins/mediarename"
@@ -65,6 +63,8 @@ githubInstall "iobataya/dokuwiki-plugin-tabinclude"         "lib/plugins/tabincl
 githubInstall "dokufreaks/plugin-tag"                       "lib/plugins/tag"
 githubInstall "splitbrain/dokuwiki-plugin-talkpage"         "lib/plugins/talkpage"
 githubInstall "dokufreaks/plugin-task"                      "lib/plugins/task"
+githubInstall "selfthinker/dokuwiki_plugin_wrap"            "lib/plugins/wrap"
+githubInstall "splitbrain/dokuwiki-plugin-bureaucracy"      "lib/plugins/bureaucracy"
 
 # download and install the template
 githubInstall "OpenSchulportfolio/dokuwiki-template-portfolio"       "lib/tpl/portfolio2"
@@ -85,6 +85,9 @@ for patch in $(find patches -name '*.patch'); do
 
 done
 
+echo 
+echo "INFO Patching version."
+sed -i "s/###VERSION###/${version}/" openschulportfolio/lib/tpl/portfolio2/version.php
 
 echo
 echo "INFO: Creating packages"

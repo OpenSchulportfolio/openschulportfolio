@@ -11,5 +11,7 @@ The script expects a Linux environment with the following tools available:
   * unzip
   * grep
   * file
+  * zip
+  * patch
 
 Run it with `./build.sh` from the repo as working directory. Delete the `cache` folder to ensure a fresh set of components when you rebuild after a longer time.

@@ -1,0 +1,14 @@
+--- openschulportfolio/lib/plugins/filelist/plugin.info.txt	2019-10-06 19:37:58.000000000 +0200
++++ /srv/spo/customers/zz99-devel/portfolio/lib/plugins/filelist/plugin.info.txt	2019-10-06 19:49:47.309508079 +0200
+@@ -1,7 +1,7 @@
+ base   filelist
+-author Gina Häußge, Dokufreaks
+-email  gina@foosel.net, freaks@dokuwiki.org
+-date   2016-09-10
+-name   Filelist Plugin
++author Gina Häußge, Dokufreas, Frank Schiebel
++email  gina@foosel.net, freaks@dokuwiki.org, frank@linuxmuster.net
++date   2019-10-06
++name   Filelist Plugin (Modified for Openschulportfolio)
+ desc   Lists files matching a given glob pattern.
+ url    https://www.dokuwiki.org/plugin:filelist
